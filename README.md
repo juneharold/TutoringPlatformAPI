@@ -56,7 +56,7 @@ This will start the Flask application on `http://127.0.0.1:5000/`.
 
 ## How To Test
 
-The project includes automated test scripts for testing all the API endpoints. Make sure to have **curl and jq** installed. To run these tests:
+The project includes automated test scripts for testing all the API endpoints. Make sure to have **curl and jq** installed. The test cases have to be run in order for the code to output correctly. To run these tests:
 
 ```bash
 cd tests
@@ -70,5 +70,4 @@ chmod +x ./testcase_scripts/*.sh
 chmod +x run_all_tests.sh
 ```
 
----
 
