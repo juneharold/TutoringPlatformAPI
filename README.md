@@ -11,6 +11,16 @@ The Tutor-Tutee Meeting API is a Flask-based RESTful API designed to facilitate 
 - **Flexible Scheduling**: Supports 30-minute and 60-minute classes, ensuring that each class starts only at the beginning of the hour or half-hour.
 - **Persistent Storage**: Uses SQLAlchemy with SQLite for data persistence, ensuring data is saved across service restarts.
 
+## Code Structure Overview
+
+- **`app.py` (Application Entry Point)**: This is the root file of the project, responsible for initializing the Flask application and tying together various components of the project. Running this file starts the web server and serves the API endpoints defined within the project.
+
+- **`/api` Directory (Endpoint Definitions)**: Contains the code that defines the API endpoints for handling tutor and tutee operations. Each file within this directory corresponds to a specific set of related functionalities, such as managing tutor availability or processing tutee class registrations.
+
+- **`/models` Directory (Database Models)**: Hosts the SQLAlchemy model definitions used by the application. This directory also includes the initialization code for the database, which is executed when `app.py` is run. The models define the structure of the database tables and the relationships between them, facilitating data persistence and retrieval operations.
+
+- **`/utils` Directory (Utility Functions)**: Contains various utility functions that support the main API logic. These functions are designed to check the validity of incoming data and requests, enhancing the robustness and security of the API. By abstracting common validation and utility operations into this directory, the code within the `/api` endpoints is kept more concise and maintainable.
+
 ## Endpoints
 
 ### Tutor Availability
