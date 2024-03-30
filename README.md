@@ -31,7 +31,7 @@ Ensure you have Python 3 and pip installed on your system.
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/juneharold/TutoringPlatformAPI.git
 ```
 
 2. Navigate to the project directory:
